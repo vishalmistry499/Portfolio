@@ -1,0 +1,24 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b132b;
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Fira Code', monospace;
+}
+
+.glass {
+  background: rgba(18, 30, 60, 0.5);
+  border: 1px solid rgba(77, 208, 225, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.glass:hover {
+  border-color: #4dd0e1;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(77, 208, 225, 0.4);
+}

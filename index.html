@@ -1,157 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vishal Mistry | IT Portfolio</title>
-
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishal Mistry — IT Portfolio</title>
+  <meta name="description" content="Portfolio of Vishal Mistry — IT support, systems, and infrastructure." />
+  <meta name="theme-color" content="#f7f8fb" id="meta-theme-color" />
+  <meta property="og:title" content="Vishal Mistry — IT Portfolio" />
+  <meta property="og:description" content="Projects, skills, and experience in IT support, systems, and infrastructure." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <a href="#content" class="skip">Skip to content</a>
 
-<!-- Sticky Navbar -->
-<nav class="fixed top-0 left-0 w-full bg-[#0b132b]/90 backdrop-blur-md z-50 shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="#" class="text-cyan-400 font-bold text-lg">VISHAL MISTRY</a>
-    <div class="space-x-6 text-gray-300 hidden md:block">
-      <a href="#about" class="hover:text-cyan-400">About</a>
-      <a href="#skills" class="hover:text-cyan-400">Skills</a>
-      <a href="#projects" class="hover:text-cyan-400">Projects</a>
-      <a href="#experience" class="hover:text-cyan-400">Experience</a>
-      <a href="#education" class="hover:text-cyan-400">Education</a>
-      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+  <!-- Header -->
+  <header aria-label="Primary">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-label="Logo"><path d="M12 2l8.66 5v10L12 22 3.34 17V7L12 2zM7 9.2v5.6L12 18l5-3.2V9.2L12 6 7 9.2z"/></svg>
+        </div>
+        <span>VISHAL MISTRY</span>
+      </div>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+<!-- Hero -->
+<section class="hero container reveal" aria-labelledby="intro">
+  <div>
+    <div class="hero-image">
+      <img src="assets/vishal-photo.jpg" alt="Vishal Mistry" class="profile-photo">
+    </div>
+    <h1 class="title" id="intro">Hi, I'm <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">Vishal Mistry</span> — I keep tech chaos turning into clean, reliable systems.</h1>
+    <p class="subtitle">IT Support • Systems • Infrastructure | Customer-first troubleshooting and clear documentation.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+      <a class="btn" href="https://linkedin.com/in/vishalmistry499" target="_blank" rel="noreferrer noopener">LinkedIn</a>
     </div>
   </div>
-</nav>
-
-<!-- Hero -->
-<header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-center py-28 mt-14">
-  <h1 class="text-5xl md:text-6xl font-bold tracking-wider text-white">VISHAL MISTRY</h1>
-  <p class="mt-4 text-xl text-gray-300">>> Turning Tech Chaos Into Clean & Reliable Systems — One Fix At A Time</p>
-  <a href="assets/resume.pdf" download class="mt-6 inline-block bg-cyan-500 hover:bg-cyan-400 px-6 py-3 rounded-lg text-white font-semibold transition">Download Resume</a>
-</header>
-
-<!-- Main Sections -->
-<main class="max-w-7xl mx-auto px-6 py-20 space-y-24">
-
-  <!-- About -->
-  <section id="about">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 01. About Me</h2>
-    <div class="glass p-8 mt-6">
-      <p>Detail-oriented, ambitious IT professional passionate about infrastructure, tech support, and innovation. With a Master’s in Electrical & Computer Engineering and experience as a Technical Support Agent, I bring strong troubleshooting, problem-solving, and customer service skills — ready to grow into system administration.</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 02. Skills</h2>
-    <div class="grid md:grid-cols-2 gap-8 mt-6">
-      <div class="glass p-8">
-        <h3 class="text-xl text-cyan-400 font-bold mb-4">Core Competencies</h3>
-        <ul class="space-y-2">
-          <li><i class="fas fa-headset text-cyan-400 mr-2"></i> IT Support (Onsite & Remote)</li>
-          <li><i class="fas fa-users-cog text-cyan-400 mr-2"></i> Technical Troubleshooting</li>
-          <li><i class="fas fa-server text-cyan-400 mr-2"></i> IT Asset Management</li>
-          <li><i class="fas fa-book-open text-cyan-400 mr-2"></i> User Training & Documentation</li>
-        </ul>
+  <div class="hero-grid">
+    <div class="card" aria-hidden="true">
+      <div class="thumb">
+        <svg viewBox="0 0 300 168" width="120" height="120"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect width="300" height="168" rx="12" fill="url(#g1)" opacity=".25"/><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><rect x="20" y="20" width="120" height="30" rx="6"/><rect x="20" y="60" width="260" height="14" rx="6"/><rect x="20" y="82" width="220" height="14" rx="6"/><rect x="20" y="104" width="240" height="14" rx="6"/></g></svg>
       </div>
-      <div class="glass p-8">
-        <h3 class="text-xl text-cyan-400 font-bold mb-4">Technical Skills</h3>
-        <ul class="space-y-2">
-          <li><i class="fas fa-desktop text-cyan-400 mr-2"></i> OS: Windows, Linux, macOS</li>
-          <li><i class="fas fa-cloud text-cyan-400 mr-2"></i> SaaS: Google Workspace, MS Office, Zoom</li>
-          <li><i class="fas fa-network-wired text-cyan-400 mr-2"></i> Networking: TCP/IP, VPN</li>
-          <li><i class="fas fa-tools text-cyan-400 mr-2"></i> Tools: Git, TeamViewer</li>
-        </ul>
+      <div class="card-body">
+        <h3>What I do</h3>
+        <p class="meta">Hands-on IT support across Windows, macOS & Linux; asset management; email & network troubleshooting; user training.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 03. Projects</h2>
-    <div class="grid md:grid-cols-3 gap-8 mt-6">
-      <div class="glass p-6">
-        <h3 class="text-lg font-bold mb-2">ULTRA-FFIC Bot</h3>
-        <p class="text-sm text-gray-400">Raspberry Pi & Image Processing</p>
-        <p class="mt-2 text-gray-300">Smart traffic system adapting to density with Pi & Firestore.</p>
+    <div class="card" aria-hidden="true">
+      <div class="thumb">
+        <svg viewBox="0 0 300 168" width="120" height="120"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6d5efc"/></linearGradient></defs><circle cx="150" cy="84" r="72" fill="url(#g2)" opacity=".25"/><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><path d="M60 120h180M60 48h180"/><rect x="80" y="60" width="140" height="48" rx="10"/></g></svg>
       </div>
-      <div class="glass p-6">
-        <h3 class="text-lg font-bold mb-2">Store Renovation Project</h3>
-        <p class="text-sm text-gray-400">IT Relocation & Setup</p>
-        <p class="mt-2 text-gray-300">Reconfigured tills, phones, and networks for project success.</p>
-      </div>
-      <div class="glass p-6">
-        <h3 class="text-lg font-bold mb-2">Freelance Web Dev</h3>
-        <p class="text-sm text-gray-400">WordPress & SEO</p>
-        <p class="mt-2 text-gray-300">End-to-end redesign improving UX & visibility.</p>
+      <div class="card-body">
+        <h3>How I work</h3>
+        <p class="meta">Listen → triage → document → resolve. Calm, communicative, and rigorous with change control.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 04. Experience</h2>
-    <div class="glass p-8 mt-6">
-      <h3 class="text-xl text-cyan-400 font-bold">Technical Support Agent</h3>
-      <p class="text-gray-400">Geek Squad, Best Buy — Oct 2023–Present</p>
-      <ul class="list-disc ml-5 mt-3 space-y-1">
-        <li>Delivered remote & onsite tech support for electronics.</li>
-        <li>Resolved hardware/software issues for Windows & MacOS.</li>
-        <li>Handled networking/email issues using SMTP, IMAP, POP3.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 05. Education & Certifications</h2>
-    <div class="grid md:grid-cols-2 gap-8 mt-6">
-      <div class="glass p-8">
-        <h3 class="text-xl text-cyan-400 font-bold mb-2">Education</h3>
-        <ul>
-          <li>Master of Electrical & Computer Engineering — 2023</li>
-          <li>Bachelor of Computer Engineering — 2021</li>
-        </ul>
+    <!-- About -->
+    <section class="container reveal" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About</h2>
+      <div class="grid" style="grid-template-columns: 1fr 1.5fr; align-items:center; gap:1.25rem">
+        <div class="card" aria-hidden="true">
+          <div class="thumb">
+            <svg viewBox="0 0 300 168" width="120" height="120" aria-hidden="true">
+              <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs>
+              <circle cx="150" cy="84" r="60" fill="url(#g3)" opacity=".25"/>
+              <g stroke="#9aa0b3" fill="none" stroke-width="2" opacity=".85">
+                <circle cx="150" cy="76" r="22"/>
+                <path d="M108 124c8-22 28-36 42-36s34 14 42 36"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Hello!</h3>
+            <p class="meta">Detail-oriented IT professional passionate about infrastructure, tech support, and innovation.</p>
+          </div>
+        </div>
+        <div>
+          <p>With a Master's in Electrical & Computer Engineering and current experience as a Technical Support Agent, I bring strong troubleshooting, problem-solving, and customer service skills — and I'm ready to grow into system administration.</p>
+          <ul class="muted" style="margin-top:.5rem">
+            <li>Focus areas: IT Support, Systems, Documentation</li>
+            <li>Values: clarity, reliability, empathy</li>
+            <li>Based in Toronto • Open to remote</li>
+          </ul>
+        </div>
       </div>
-      <div class="glass p-8">
-        <h3 class="text-xl text-cyan-400 font-bold mb-2">Certifications</h3>
-        <ul>
-          <li>System Administration (Microsoft)</li>
-          <li>DevOps Bootcamp</li>
-          <li>Google IT Support</li>
-        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="container reveal" id="skills" aria-labelledby="skills-title">
+      <h2 class="section-title" id="skills-title">Skills</h2>
+      <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div>
+          <h3>Core Competencies</h3>
+          <div class="pillgroup" aria-label="Core Competencies">
+            <span class="pill">IT Support (Onsite & Remote)</span>
+            <span class="pill">Technical Troubleshooting</span>
+            <span class="pill">IT Asset Management</span>
+            <span class="pill">User Training</span>
+            <span class="pill">Documentation</span>
+          </div>
+        </div>
+        <div>
+          <h3>Technical Skills</h3>
+          <div class="pillgroup">
+            <span class="pill">Windows</span>
+            <span class="pill">macOS</span>
+            <span class="pill">Linux</span>
+            <span class="pill">Google Workspace</span>
+            <span class="pill">Microsoft 365</span>
+            <span class="pill">Zoom</span>
+          </div>
+        </div>
+        <div>
+          <h3>Networking & Tools</h3>
+          <div class="pillgroup">
+            <span class="pill">TCP/IP</span>
+            <span class="pill">VPN</span>
+            <span class="pill">SMTP/IMAP/POP3</span>
+            <span class="pill">Git</span>
+            <span class="pill">TeamViewer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="container reveal" id="projects" aria-labelledby="projects-title">
+      <div class="row" style="justify-content:space-between; align-items:end">
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <div class="toolbar" role="toolbar" aria-label="Project filters">
+          <button class="pill filter active" data-filter="all">All</button>
+          <button class="pill filter" data-filter="it">IT</button>
+          <button class="pill filter" data-filter="iot">IoT</button>
+          <button class="pill filter" data-filter="web">Web</button>
+        </div>
+      </div>
+
+      <div class="projects" id="projectGrid">
+        <article class="card" data-tags="iot it">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><rect x="20" y="20" width="260" height="128" rx="12"/><circle cx="90" cy="84" r="22"/><path d="M140 84h120"/></g></svg>
+          </div>
+          <div class="card-body">
+            <h3>ULTRA-FFIC Bot</h3>
+            <p class="meta">Raspberry Pi & Image Processing</p>
+            <p>Smart traffic system adapting to density with Raspberry Pi & Firestore.</p>
+            <div class="tags">
+              <span class="pill">Raspberry Pi</span>
+              <span class="pill">Computer Vision</span>
+              <span class="pill">Firestore</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="#">Live</a>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="it">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><path d="M50 118h200 M100 118c0-22 18-40 40-40 5 0 10 1 15 3 7-15 21-25 38-25 24 0 43 19 43 43 0 6-1 12-4 17"/></g></svg>
+          </div>
+          <div class="card-body">
+            <h3>Store Renovation Project</h3>
+            <p class="meta">IT Relocation & Setup</p>
+            <p>Reconfigured tills, phones, and networks for project success.</p>
+            <div class="tags">
+              <span class="pill">Networking</span>
+              <span class="pill">Telephony</span>
+              <span class="pill">Deployment</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="#">Docs</a>
+            <a class="btn" href="#">Photos</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="web">
+          <div class="thumb" aria-hidden="true">
+            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><rect x="20" y="24" width="260" height="40" rx="8"/><rect x="20" y="70" width="200" height="12" rx="6"/><rect x="20" y="88" width="240" height="12" rx="6"/><rect x="20" y="106" width="180" height="12" rx="6"/></g></svg>
+          </div>
+          <div class="card-body">
+            <h3>Freelance Web Dev</h3>
+            <p class="meta">WordPress & SEO</p>
+            <p>End-to-end redesign improving UX & visibility.</p>
+            <div class="tags">
+              <span class="pill">WordPress</span>
+              <span class="pill">SEO</span>
+              <span class="pill">UX</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="#">Live</a>
+            <a class="btn" href="#">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="container reveal" id="experience" aria-labelledby="exp-title">
+      <h2 class="section-title" id="exp-title">Experience</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-role">Technical Support Agent • Geek Squad, Best Buy</div>
+          <div class="tl-meta">Oct 2023 — Present · Remote / Onsite</div>
+          <p class="muted">Delivered remote & onsite tech support for consumer and small-business electronics. Resolved hardware/software issues for Windows & macOS. Handled networking & email issues using SMTP, IMAP, POP3.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="container reveal" id="education" aria-labelledby="edu-title">
+      <h2 class="section-title" id="edu-title">Education</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-role">M.Eng. Electrical & Computer Engineering</div>
+          <div class="tl-meta">2023</div>
+          <p class="muted">Focus on systems, networking, and software foundations.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-role">B.Eng. Computer Engineering</div>
+          <div class="tl-meta">2021</div>
+          <p class="muted">Coursework in computing systems and electronics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="container reveal" id="certifications" aria-labelledby="cert-title">
+      <h2 class="section-title" id="cert-title">Certifications</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-role">System Administration (Microsoft)</div>
+          <div class="tl-meta">2024</div>
+          <p class="muted">Windows Server administration, Active Directory, and system security.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-role">Google IT Support</div>
+          <div class="tl-meta">2020</div>
+          <p class="muted">Comprehensive IT support fundamentals, troubleshooting, and customer service.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-role">DevOps Bootcamp</div>
+          <div class="tl-meta">Ongoing</div>
+          <p class="muted">CI/CD, containerization, and infrastructure automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container reveal" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="contact-card">
+        <div class="contact-box">
+          <h3>Let's connect</h3>
+          <p class="muted">Open to IT support and systems roles. Based in Toronto, open to remote.</p>
+          <div class="row">
+            <button class="btn" id="copyEmail" aria-label="Copy email address">Copy email</button>
+            <a class="btn" href="mailto:vishalmistry499@gmail.com" aria-label="Open your email client">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/vishalmistry499" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a class="btn" href="tel:519-903-9629" aria-label="Call Vishal">Call</a>
+          </div>
+          <small class="muted">vishalmistry499@gmail.com · 519‑903‑9629</small>
+        </div>
+        <div class="contact-box">
+          <h3>Quick Facts</h3>
+          <ul class="muted">
+            <li>Eligible to work in Canada</li>
+            <li>Timezone: America/Toronto (ET)</li>
+            <li>Focus: IT Support • Systems • Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap">
+      <div>© <span id="year"></span> Vishal Mistry. All rights reserved.</div>
+      <div class="social" aria-label="Social links">
+        <a class="pill" href="mailto:vishalmistry499@gmail.com" aria-label="Email">✉️ Email</a>
+        <a class="pill" href="tel:519-903-9629" aria-label="Phone">📞 Phone</a>
+        <a class="pill" href="https://www.linkedin.com/in/vishalmistry499" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">💼 LinkedIn</a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2 class="text-3xl font-bold border-b-2 border-cyan-400 pb-2">| 06. Contact</h2>
-    <div class="text-center mt-6 space-y-4">
-      <div class="flex justify-center space-x-6 text-3xl">
-        <a href="mailto:vishalmistry499@gmail.com" class="hover:text-cyan-400"><i class="fas fa-envelope"></i></a>
-        <a href="tel:519-903-9629" class="hover:text-cyan-400"><i class="fas fa-phone"></i></a>
-        <a href="https://linkedin.com/in/vishalmistry499" target="_blank" class="hover:text-cyan-400"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <p class="text-sm text-gray-400">&copy; 2025 Vishal Mistry</p>
-    </div>
-  </section>
+  <button id="toTop" class="btn" style="position:fixed; right:16px; bottom:16px; display:none">↑ Top</button>
 
-</main>
-
-<!-- JS -->
-<script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

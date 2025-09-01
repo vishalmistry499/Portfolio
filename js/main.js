@@ -66,23 +66,54 @@ function setupEmailCopy() {
 
 async function copyEmailToClipboard() {
   const email = 'vishalmistry499@gmail.com';
-  const button = document.getElementById('copyEmail');
   
   try {
     await navigator.clipboard.writeText(email);
-    showCopySuccess(button);
-  } catch {
-    alert('Failed to copy email');
+    showToast('Email copied to clipboard!');
+  } catch (err) {
+    console.error('Failed to copy email:', err);
+    showToast('Failed to copy email.', true);
   }
 }
 
-function showCopySuccess(button) {
-  const originalText = button.textContent;
-  button.textContent = 'Copied!';
+function showToast(message, isError = false) {
+  let toastContainer = document.querySelector('.toast-container');
+  if (!toastContainer) {
+    toastContainer = document.createElement('div');
+    toastContainer.className = 'toast-container';
+    document.body.appendChild(toastContainer);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  
+  // Set a different style for error messages if needed
+  if (isError) {
+    toast.style.backgroundColor = '#fca5a5';
+    toast.style.color = '#7f1d1d';
+  }
+
+  toastContainer.appendChild(toast);
+
+  // Add a slight delay before showing to trigger the transition
   setTimeout(() => {
-    button.textContent = originalText;
-  }, 1200);
+    toast.classList.add('show');
+  }, 10);
+
+  // Remove the toast after 3 seconds
+  setTimeout(() => {
+    toast.classList.remove('show');
+    // After the fade-out transition, remove the element
+    toast.addEventListener('transitionend', () => {
+      toast.remove();
+      if (toastContainer.children.length === 0) {
+        toastContainer.remove();
+      }
+    });
+  }, 3000);
 }
+
 
 // Setup project filtering
 function setupProjectFilters() {

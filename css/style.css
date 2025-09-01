@@ -134,6 +134,35 @@ footer{ padding:2.5rem 0; color:var(--muted); }
 .muted{ color:var(--muted) }
 .row{ display:flex; gap:.75rem; flex-wrap:wrap }
 
+/* New toast notification styles */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.toast {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  color: var(--text);
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 980px){ 
   .hero{ grid-template-columns:1fr; padding-top: 3rem } 

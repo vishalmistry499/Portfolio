@@ -7,6 +7,11 @@ function initPortfolio() {
   setupProjectFilters();
   setupSmoothScroll();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  addProgressiveEnhancements();
+  setupOptimizedAnimations();
+>>>>>>> Stashed changes
 =======
   addProgressiveEnhancements();
   setupOptimizedAnimations();
@@ -97,6 +102,7 @@ function setupEmailCopy() {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 async function copyEmailToClipboard() {
   const email = 'vishalmistry499@gmail.com';
   
@@ -107,6 +113,8 @@ async function copyEmailToClipboard() {
     console.error('Failed to copy email:', err);
     showToast('Failed to copy email.', true);
 =======
+=======
+>>>>>>> Stashed changes
 // Better Toast Notifications - IMPROVEMENT
 function enhancedShowToast(message, type = 'info') {
   let toastContainer = document.querySelector('.toast-container');
@@ -114,6 +122,7 @@ function enhancedShowToast(message, type = 'info') {
     toastContainer = document.createElement('div');
     toastContainer.className = 'toast-container';
     document.body.appendChild(toastContainer);
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
   }
 
@@ -128,10 +137,15 @@ function showToast(message, isError = false) {
 
 =======
 >>>>>>> Stashed changes
+=======
+  }
+
+>>>>>>> Stashed changes
   const toast = document.createElement('div');
   toast.className = 'toast';
   toast.textContent = message;
   
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   // Set a different style for error messages if needed
   if (isError) {
@@ -174,6 +188,22 @@ function showToast(message, isError = false) {
   }, 3000);
 }
 
+=======
+  if (type === 'success') {
+    toast.style.background = 'linear-gradient(135deg, var(--accent-3, #10b981), var(--accent))';
+    toast.style.color = 'white';
+  }
+
+  toastContainer.appendChild(toast);
+  requestAnimationFrame(() => toast.classList.add('show'));
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
+
+>>>>>>> Stashed changes
 // Legacy toast function for backward compatibility
 function showToast(message, isError = false) {
   const type = isError ? 'error' : 'info';
@@ -205,6 +235,9 @@ function enhancedFilterProjects(filterType) {
     }
   });
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 // Setup project filtering
@@ -228,6 +261,7 @@ function setActiveFilter(activeButton, allButtons) {
 // Legacy filter function for backward compatibility
 function filterProjects(filterType) {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   const projectCards = document.querySelectorAll('#projectGrid .card');
   
   projectCards.forEach(card => {
@@ -238,6 +272,9 @@ function filterProjects(filterType) {
       card.style.display = cardTags.includes(filterType) ? '' : 'none';
     }
   });
+=======
+  enhancedFilterProjects(filterType);
+>>>>>>> Stashed changes
 =======
   enhancedFilterProjects(filterType);
 >>>>>>> Stashed changes
@@ -267,7 +304,10 @@ function handleAnchorClick(event) {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 // Progressive Enhancement Features - NEW IMPROVEMENT
 function addProgressiveEnhancements() {
   // Intersection Observer for better performance
@@ -415,6 +455,9 @@ window.addEventListener('load', function() {
   }
 });
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 // Start everything when page loads
 document.addEventListener('DOMContentLoaded', initPortfolioEnhanced);

@@ -21,6 +21,10 @@ a{color:inherit;text-decoration:none}
   --accent: #6d5efc; 
   --accent-2: #0ea5e9;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  --accent-3: #10b981;
+>>>>>>> Stashed changes
 =======
   --accent-3: #10b981;
 >>>>>>> Stashed changes
@@ -113,12 +117,18 @@ section{
 .card{ border:1px solid var(--border); border-radius: calc(var(--radius) + 2px); background:var(--surface); box-shadow: var(--shadow-1); overflow:hidden; display:flex; flex-direction:column }
 .thumb{ aspect-ratio: 16/9; background: radial-gradient(100% 100% at 0 0, color-mix(in oklab, var(--accent) 50%, transparent), transparent), linear-gradient(135deg, color-mix(in oklab, var(--accent-2) 50%, transparent), transparent), linear-gradient(135deg, rgba(255,255,255,.06), rgba(0,0,0,.06)); border-bottom:1px solid var(--border); display:grid; place-items:center }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .thumb svg{ opacity:.9 }
 =======
+=======
+>>>>>>> Stashed changes
 .thumb img{
   max-width:100%;
   height:auto;
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 .card-body{ padding:1rem; display:grid; gap:.75rem }
 .card h3{ font-size:1.1rem }
@@ -175,7 +185,11 @@ footer{ padding:2.5rem 0; color:var(--muted); }
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* Mobile responsive adjustments */
+=======
+/* Enhanced Mobile Responsiveness */
+>>>>>>> Stashed changes
 =======
 /* Enhanced Mobile Responsiveness */
 >>>>>>> Stashed changes

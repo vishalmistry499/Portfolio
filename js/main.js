@@ -6,16 +6,8 @@ function initPortfolio() {
   setupEmailCopy();
   setupProjectFilters();
   setupSmoothScroll();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   addProgressiveEnhancements();
   setupOptimizedAnimations();
->>>>>>> Stashed changes
-=======
-  addProgressiveEnhancements();
-  setupOptimizedAnimations();
->>>>>>> Stashed changes
 }
 
 // Update footer with current year
@@ -101,20 +93,6 @@ function setupEmailCopy() {
   copyButton.addEventListener('click', enhancedCopyEmail);
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-async function copyEmailToClipboard() {
-  const email = 'vishalmistry499@gmail.com';
-  
-  try {
-    await navigator.clipboard.writeText(email);
-    showToast('Email copied to clipboard!');
-  } catch (err) {
-    console.error('Failed to copy email:', err);
-    showToast('Failed to copy email.', true);
-=======
-=======
->>>>>>> Stashed changes
 // Better Toast Notifications - IMPROVEMENT
 function enhancedShowToast(message, type = 'info') {
   let toastContainer = document.querySelector('.toast-container');
@@ -122,58 +100,12 @@ function enhancedShowToast(message, type = 'info') {
     toastContainer = document.createElement('div');
     toastContainer.className = 'toast-container';
     document.body.appendChild(toastContainer);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
   }
 
-<<<<<<< Updated upstream
-function showToast(message, isError = false) {
-  let toastContainer = document.querySelector('.toast-container');
-  if (!toastContainer) {
-    toastContainer = document.createElement('div');
-    toastContainer.className = 'toast-container';
-    document.body.appendChild(toastContainer);
-  }
-
-=======
->>>>>>> Stashed changes
-=======
-  }
-
->>>>>>> Stashed changes
   const toast = document.createElement('div');
   toast.className = 'toast';
   toast.textContent = message;
   
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  // Set a different style for error messages if needed
-  if (isError) {
-    toast.style.backgroundColor = '#fca5a5';
-    toast.style.color = '#7f1d1d';
-  }
-
-  toastContainer.appendChild(toast);
-
-  // Add a slight delay before showing to trigger the transition
-  setTimeout(() => {
-    toast.classList.add('show');
-  }, 10);
-
-  // Remove the toast after 3 seconds
-  setTimeout(() => {
-    toast.classList.remove('show');
-    // After the fade-out transition, remove the element
-    toast.addEventListener('transitionend', () => {
-      toast.remove();
-      if (toastContainer.children.length === 0) {
-        toastContainer.remove();
-      }
-    });
-  }, 3000);
-}
-
-=======
   if (type === 'success') {
     toast.style.background = 'linear-gradient(135deg, var(--accent-3, #10b981), var(--accent))';
     toast.style.color = 'white';
@@ -188,22 +120,6 @@ function showToast(message, isError = false) {
   }, 3000);
 }
 
-=======
-  if (type === 'success') {
-    toast.style.background = 'linear-gradient(135deg, var(--accent-3, #10b981), var(--accent))';
-    toast.style.color = 'white';
-  }
-
-  toastContainer.appendChild(toast);
-  requestAnimationFrame(() => toast.classList.add('show'));
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 300);
-  }, 3000);
-}
-
->>>>>>> Stashed changes
 // Legacy toast function for backward compatibility
 function showToast(message, isError = false) {
   const type = isError ? 'error' : 'info';
@@ -235,10 +151,6 @@ function enhancedFilterProjects(filterType) {
     }
   });
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 // Setup project filtering
 function setupProjectFilters() {
@@ -260,24 +172,7 @@ function setActiveFilter(activeButton, allButtons) {
 
 // Legacy filter function for backward compatibility
 function filterProjects(filterType) {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  const projectCards = document.querySelectorAll('#projectGrid .card');
-  
-  projectCards.forEach(card => {
-    if (filterType === 'all') {
-      card.style.display = '';
-    } else {
-      const cardTags = card.getAttribute('data-tags') || '';
-      card.style.display = cardTags.includes(filterType) ? '' : 'none';
-    }
-  });
-=======
   enhancedFilterProjects(filterType);
->>>>>>> Stashed changes
-=======
-  enhancedFilterProjects(filterType);
->>>>>>> Stashed changes
 }
 
 // Setup smooth scrolling for anchor links
@@ -303,11 +198,6 @@ function handleAnchorClick(event) {
   }
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 // Progressive Enhancement Features - NEW IMPROVEMENT
 function addProgressiveEnhancements() {
   // Intersection Observer for better performance
@@ -455,9 +345,5 @@ window.addEventListener('load', function() {
   }
 });
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 // Start everything when page loads
 document.addEventListener('DOMContentLoaded', initPortfolioEnhanced);

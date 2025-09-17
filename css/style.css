@@ -20,14 +20,7 @@ a{color:inherit;text-decoration:none}
   --border: #e5e7eb; 
   --accent: #6d5efc; 
   --accent-2: #0ea5e9;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   --accent-3: #10b981;
->>>>>>> Stashed changes
-=======
-  --accent-3: #10b981;
->>>>>>> Stashed changes
   /* Fixed background gradient for the whole page */
   --gradient: radial-gradient(1200px 600px at 10% -10%, rgba(13, 148, 136, .25), transparent 60%),
               radial-gradient(800px 500px at 100% 10%, rgba(109, 94, 252,.25), transparent 60%),
@@ -116,20 +109,10 @@ section{
 .projects{ display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem }
 .card{ border:1px solid var(--border); border-radius: calc(var(--radius) + 2px); background:var(--surface); box-shadow: var(--shadow-1); overflow:hidden; display:flex; flex-direction:column }
 .thumb{ aspect-ratio: 16/9; background: radial-gradient(100% 100% at 0 0, color-mix(in oklab, var(--accent) 50%, transparent), transparent), linear-gradient(135deg, color-mix(in oklab, var(--accent-2) 50%, transparent), transparent), linear-gradient(135deg, rgba(255,255,255,.06), rgba(0,0,0,.06)); border-bottom:1px solid var(--border); display:grid; place-items:center }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.thumb svg{ opacity:.9 }
-=======
-=======
->>>>>>> Stashed changes
 .thumb img{
   max-width:100%;
   height:auto;
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .card-body{ padding:1rem; display:grid; gap:.75rem }
 .card h3{ font-size:1.1rem }
 .meta{ color:var(--muted); font-size:.95rem }
@@ -184,15 +167,7 @@ footer{ padding:2.5rem 0; color:var(--muted); }
   transform: translateY(0);
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/* Mobile responsive adjustments */
-=======
 /* Enhanced Mobile Responsiveness */
->>>>>>> Stashed changes
-=======
-/* Enhanced Mobile Responsiveness */
->>>>>>> Stashed changes
 @media (max-width: 980px){ 
   .hero{ grid-template-columns:1fr; padding-top: 3rem } 
   .contact-card{ grid-template-columns:1fr } 

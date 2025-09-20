@@ -26,7 +26,16 @@ a{color:inherit;text-decoration:none}
               radial-gradient(800px 500px at 100% 10%, rgba(109, 94, 252,.25), transparent 60%),
               radial-gradient(600px 400px at 50% 120%, rgba(14, 165, 233,.22), transparent 60%);
 }
+/* Update base font styles for consistency */
+p, .meta, .muted {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
+.meta, .muted {
+  color: var(--muted);
+  font-size: 0.95rem; /* This keeps the meta text slightly smaller, which looks good. */
+}
 .about-grid {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;

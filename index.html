@@ -82,9 +82,9 @@
     </section>
 
     <!-- About -->
-    <section class="container reveal" id="about" aria-labelledby="about-title">
+<section class="container reveal" id="about" aria-labelledby="about-title">
       <h2 class="section-title" id="about-title">About</h2>
-      <div class="grid" style="grid-template-columns: 1fr 1.5fr; align-items:center; gap:1.25rem">
+      <div class="about-grid grid">
         <div class="card" aria-hidden="true">
           <div class="thumb">
             <img src="assets/AboutMe.png" alt="What I do icon" style="max-width:100%; height:auto;">
@@ -95,10 +95,12 @@
           </div>
         </div>
         <div>
-          <p>With a Master's in Electrical & Computer Engineering and current experience as a Technical Support Agent, I bring strong troubleshooting, problem-solving, and customer service skills — and I'm ready to grow into system administration.</p>
-          <ul class="muted" style="margin-top:.5rem">
-            <li>Focus areas: IT Support, Systems, Documentation</li>
-            <li>Values: clarity, reliability, empathy</li>
+          <p style="text-align: justify;">As a seasoned Technical Support Agent with a Master's in Electrical & Computer Engineering, my career has been driven by a passion for solving complex technical challenges and providing clear, effective solutions. I specialize in a wide range of systems, from desktop support across Windows, macOS, and Linux, to managing enterprise-level tools like Microsoft 365 and Google Workspace.</p>
+          <h3 class="mt-4">My Approach & Values</h3>
+          <p style="text-align: justify;">My work is grounded in a simple philosophy: Clarity, Reliability, and Empathy**. I believe in transparent communication, building trust through dependable systems, and approaching every problem with a deep understanding of the user's perspective. My goal is not just to fix an issue but to empower users with the knowledge to navigate their technology confidently.</p>
+          <h3 class="mt-4">Looking Forward</h3>
+          <p style="text-align: justify;">I am eager to transition from technical support into a system administration role, where I can apply my foundational knowledge of networking, cloud services, and infrastructure to build and maintain robust, scalable systems that support business growth and innovation. I am always learning, currently expanding my skills in Azure, Hyper-V, and DevOps practices to stay ahead of the curve.</p>
+          <ul>
             <li>Based in Greater Toronto Area; Open to relocate across Ontario or work remotely</li>
           </ul>
         </div>
@@ -210,7 +212,7 @@
       <div class="projects" id="projectGrid">
         <article class="card" data-tags="iot it">
           <div class="thumb" aria-hidden="true">
-            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><rect x="20" y="20" width="260" height="128" rx="12"/><circle cx="90" cy="84" r="22"/><path d="M140 84h120"/></g></svg>
+            <img src="assets/ultrafficbot.gif" alt="ultrafficbot.">
           </div>
           <div class="card-body">
             <h3>ULTRA-FFIC Bot</h3>
@@ -230,7 +232,7 @@
 
         <article class="card" data-tags="it">
           <div class="thumb" aria-hidden="true">
-            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><path d="M50 118h200 M100 118c0-22 18-40 40-40 5 0 10 1 15 3 7-15 21-25 38-25 24 0 43 19 43 43 0 6-1 12-4 17"/></g></svg>
+            <img src="assets/StoreReno.png" alt="Store Renovation">
           </div>
           <div class="card-body">
             <h3>Store Renovation Project</h3>
@@ -250,7 +252,7 @@
 
         <article class="card" data-tags="web">
           <div class="thumb" aria-hidden="true">
-            <svg viewBox="0 0 300 168" width="100%" height="100%"><g fill="none" stroke="#9aa0b3" stroke-width="2" opacity=".85"><rect x="20" y="24" width="260" height="40" rx="8"/><rect x="20" y="70" width="200" height="12" rx="6"/><rect x="20" y="88" width="240" height="12" rx="6"/><rect x="20" y="106" width="180" height="12" rx="6"/></g></svg>
+            <img src="assets/TFA.png" alt="Dreelance Project">
           </div>
           <div class="card-body">
             <h3>Freelance Web Dev</h3>
@@ -328,15 +330,10 @@
         <div class="contact-box">
           <h3>Let's connect</h3>
           <p class="muted">Open to IT support and systems roles. Based in Toronto, open to remote.</p>
-          <div class="row">
-            <button class="btn" id="copyEmail" aria-label="Copy email address">Copy email</button>
-            <a class="btn" href="mailto:vishalmistry499@gmail.com" aria-label="Open your email client">Email me</a>
-            <a class="btn" href="https://www.linkedin.com/in/vishalmistry499" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-            <a class="btn" href="tel:519-903-9629" aria-label="Call Vishal">Call</a>
-          </div>
-          <small class="muted">vishalmistry499@gmail.com · 519‑903‑9629</small>
           
           <div class="contact-methods">
+            <button class="btn" id="copyEmail" aria-label="Copy email address">Copy email</button>
+
             <a href="mailto:vishalmistry499@gmail.com" class="contact-method pill">
               <span class="icon">✉️</span>
               <span>Email Me</span>
@@ -349,6 +346,7 @@
               <span class="icon">💼</span>
               <span>LinkedIn</span>
             </a>
+             <small class="muted">vishalmistry499@gmail.com · 519‑903‑9629</small>
           </div>
         </div>
         <div class="contact-box">

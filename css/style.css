@@ -40,12 +40,7 @@ p, .meta, .muted {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: 1.25rem;
-}
-
-@media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+    display: grid;
 }
 
 body{ 
@@ -79,7 +74,6 @@ nav a:hover{ background:var(--surface); border-color:var(--border); }
 .btn:hover{ transform:translateY(-1px) }
 .icon-btn{ width:40px; height:40px; display:grid; place-items:center; border-radius:999px; border:1px solid var(--border); background:var(--surface); }
 
-/* Sections: completely transparent to show fixed background */
 section{ 
   padding: 3rem 0; 
   background: transparent;
@@ -188,11 +182,20 @@ footer{ padding:2.5rem 0; color:var(--muted); }
   transform: translateY(0);
 }
 
-/* Enhanced Mobile Responsiveness */
+.skill-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 980px){ 
   .hero{ grid-template-columns:1fr; padding-top: 3rem } 
   .contact-card{ grid-template-columns:1fr } 
   .projects{ grid-template-columns: repeat(2, 1fr) } 
+      .about-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 620px){ 
@@ -206,7 +209,6 @@ footer{ padding:2.5rem 0; color:var(--muted); }
   }
 }
 
-/* Enhanced Mobile Responsiveness - IMPROVEMENTS */
 @media (max-width: 500px){ 
   .title{ font-size:2rem; line-height:1.2 }
   .hero{ gap:1.5rem; padding:2rem 0 }
@@ -216,33 +218,30 @@ footer{ padding:2.5rem 0; color:var(--muted); }
   .profile-photo{ width:120px; height:120px }
 }
 
-/* Better Project Card Hover Effects - IMPROVEMENTS */
 .card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-2); border-color:var(--accent) }
 .card:hover .thumb{ background:linear-gradient(135deg, var(--accent), var(--accent-2)) }
 
-/* Enhanced Button States - IMPROVEMENTS */
 .btn:active{ transform:translateY(0); box-shadow:var(--shadow-1) }
 .btn:hover:not(.primary){ background:linear-gradient(135deg, rgba(109,94,252,.1), rgba(14,165,233,.1)) }
 
-/* Better Timeline Visual - IMPROVEMENTS */
 .timeline::before{ background:linear-gradient(180deg, var(--accent), var(--accent-2), var(--accent)) }
 .tl-item:hover{ transform:translateX(8px); transition:transform .3s ease }
 
-/* Loading States - IMPROVEMENTS */
+/* Loading States */
 .loading{ opacity:.6; pointer-events:none }
 .fade-in{ opacity:0; animation:fadeIn .6s ease forwards }
 @keyframes fadeIn{ to{ opacity:1 } }
 
-/* Enhanced Focus for Accessibility - IMPROVEMENTS */
+/* Enhanced Focus for Accessibility */
 .btn:focus,.filter:focus{ outline:3px solid var(--accent); outline-offset:3px }
 
-/* Skill Progress Bars - NEW FEATURE */
+/* Skill Progress Bars */
 .skill-progress{ margin-top:1.5rem }
 .skill-item{ display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem }
 .progress-bar{ width:120px; height:8px; background:var(--border); border-radius:4px; overflow:hidden }
 .progress{ height:100%; background:linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius:4px; transition:width 1s ease }
 
-/* Enhanced Contact Methods - NEW FEATURE */
+/* Enhanced Contact Methods */
 .contact-methods{ display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin-top:1.5rem }
 .contact-method{ display:flex; align-items:center; gap:.5rem; transition:transform .2s ease }
 .contact-method:hover{ transform:translateY(-2px) }
